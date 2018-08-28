@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="WebServiceTest" duration-ms="3949" started-at="2018-08-28T20:37:43Z" finished-at="2018-08-28T20:37:47Z">
+    <groups>
+      <group name="ApacheHttpClient">
+        <method signature="ApacheHttpClientTest.checkResponseBody()[pri:0, instance:webservices.tests.ApacheHttpClientTest@d7b1517]" name="checkResponseBody" class="webservices.tests.ApacheHttpClientTest"/>
+        <method signature="ApacheHttpClientTest.checkResponseHeader()[pri:0, instance:webservices.tests.ApacheHttpClientTest@d7b1517]" name="checkResponseHeader" class="webservices.tests.ApacheHttpClientTest"/>
+        <method signature="ApacheHttpClientTest.checkStatusCodeTest()[pri:0, instance:webservices.tests.ApacheHttpClientTest@d7b1517]" name="checkStatusCodeTest" class="webservices.tests.ApacheHttpClientTest"/>
+      </group> <!-- ApacheHttpClient -->
+      <group name="RestAssured">
+        <method signature="RestAssuredTest.checkResponseBody()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="checkResponseBody" class="webservices.tests.RestAssuredTest"/>
+        <method signature="RestAssuredTest.checkResponseHeader()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="checkResponseHeader" class="webservices.tests.RestAssuredTest"/>
+        <method signature="RestAssuredTest.checkStatusCode()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="checkStatusCode" class="webservices.tests.RestAssuredTest"/>
+      </group> <!-- RestAssured -->
+      <group name="RestTemplate">
+        <method signature="RestTemplateTest.checkResponseBody()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="checkResponseBody" class="webservices.tests.RestTemplateTest"/>
+        <method signature="RestTemplateTest.checkResponseHeader()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="checkResponseHeader" class="webservices.tests.RestTemplateTest"/>
+        <method signature="RestTemplateTest.checkStatusCode()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="checkStatusCode" class="webservices.tests.RestTemplateTest"/>
+      </group> <!-- RestTemplate -->
+      <group name="Bonus task">
+        <method signature="BonusTasksTests.testDelete()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testDelete" class="webservices.tests.BonusTasksTests"/>
+        <method signature="BonusTasksTests.testPatch()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testPatch" class="webservices.tests.BonusTasksTests"/>
+        <method signature="BonusTasksTests.testPost()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testPost" class="webservices.tests.BonusTasksTests"/>
+        <method signature="BonusTasksTests.testPut()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testPut" class="webservices.tests.BonusTasksTests"/>
+      </group> <!-- Bonus task -->
+    </groups>
+    <test name="RestAssuredTest" duration-ms="3949" started-at="2018-08-28T20:37:43Z" finished-at="2018-08-28T20:37:47Z">
+      <class name="webservices.tests.ApacheHttpClientTest">
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:webservices.tests.ApacheHttpClientTest@d7b1517]" name="checkResponseBody" duration-ms="144" started-at="2018-08-28T23:37:45Z" description="Verify http response body" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="PASS" signature="checkResponseHeader()[pri:0, instance:webservices.tests.ApacheHttpClientTest@d7b1517]" name="checkResponseHeader" duration-ms="81" started-at="2018-08-28T23:37:45Z" description="Verify http status code" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseHeader -->
+        <test-method status="PASS" signature="checkStatusCodeTest()[pri:0, instance:webservices.tests.ApacheHttpClientTest@d7b1517]" name="checkStatusCodeTest" duration-ms="106" started-at="2018-08-28T23:37:45Z" description="Verify http status code" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeTest -->
+      </class> <!-- webservices.tests.ApacheHttpClientTest -->
+      <class name="webservices.tests.RestTemplateTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="init" is-config="true" duration-ms="955" started-at="2018-08-28T23:37:43Z" description="Initialization of WebService, get response" finished-at="2018-08-28T23:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="init" is-config="true" duration-ms="953" started-at="2018-08-28T23:37:43Z" description="Initialization of WebService, get response" finished-at="2018-08-28T23:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkResponseHeader()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="checkResponseHeader" duration-ms="7" started-at="2018-08-28T23:37:44Z" description="Verify http response header" finished-at="2018-08-28T23:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseHeader -->
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="checkResponseBody" duration-ms="19" started-at="2018-08-28T23:37:44Z" description="Verify http response body" finished-at="2018-08-28T23:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="PASS" signature="init()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="init" is-config="true" duration-ms="27" started-at="2018-08-28T23:37:44Z" description="Initialization of WebService, get response" finished-at="2018-08-28T23:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:webservices.tests.RestTemplateTest@546a03af]" name="checkStatusCode" duration-ms="1" started-at="2018-08-28T23:37:44Z" description="Verify http status code" finished-at="2018-08-28T23:37:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+      </class> <!-- webservices.tests.RestTemplateTest -->
+      <class name="webservices.tests.BonusTasksTests">
+        <test-method status="PASS" signature="testDelete()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testDelete" duration-ms="2916" started-at="2018-08-28T23:37:44Z" description="Test for method DELETE, delete gist" finished-at="2018-08-28T23:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+        <test-method status="PASS" signature="testPatch()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testPatch" duration-ms="2939" started-at="2018-08-28T23:37:44Z" description="Test for method PATCH, update gist" finished-at="2018-08-28T23:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPatch -->
+        <test-method status="PASS" signature="testPost()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testPost" duration-ms="1985" started-at="2018-08-28T23:37:45Z" description="Test for method POST: create gist" finished-at="2018-08-28T23:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPost -->
+        <test-method status="PASS" signature="testPut()[pri:0, instance:webservices.tests.BonusTasksTests@2a18f23c]" name="testPut" duration-ms="804" started-at="2018-08-28T23:37:45Z" description="Test for method PUT, star gist" finished-at="2018-08-28T23:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPut -->
+      </class> <!-- webservices.tests.BonusTasksTests -->
+      <class name="webservices.tests.RestAssuredTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="init" is-config="true" duration-ms="1368" started-at="2018-08-28T23:37:43Z" description="Initialization of WebService, get response" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="init" is-config="true" duration-ms="1367" started-at="2018-08-28T23:37:43Z" description="Initialization of WebService, get response" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="init" is-config="true" duration-ms="1366" started-at="2018-08-28T23:37:43Z" description="Initialization of WebService, get response" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkResponseHeader()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="checkResponseHeader" duration-ms="161" started-at="2018-08-28T23:37:45Z" description="Verify an http response header" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseHeader -->
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="checkResponseBody" duration-ms="205" started-at="2018-08-28T23:37:45Z" description="Verify an http response body" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:webservices.tests.RestAssuredTest@16c0663d]" name="checkStatusCode" duration-ms="1" started-at="2018-08-28T23:37:45Z" description="Verify an http status code" finished-at="2018-08-28T23:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+      </class> <!-- webservices.tests.RestAssuredTest -->
+    </test> <!-- RestAssuredTest -->
+  </suite> <!-- WebServiceTest -->
+</testng-results>

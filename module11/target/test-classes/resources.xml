@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebServiceTest">
+	<test name="RestAssuredTest" parallel="methods" threadCount = "3">
+		<groups>
+			<run>
+				<include name="RestAssured" />
+				<include name="RestTemplate" />
+				<include name="ApacheHttpClient" />
+				<include name="Bonus task" />
+			</run>
+		</groups>
+		<classes>
+			<class name="webservices.tests.RestAssuredTest" />
+			<class name="webservices.tests.RestTemplateTest" />
+			<class name="webservices.tests.BonusTasksTests" />
+			<class name="webservices.tests.ApacheHttpClientTest" />
+		</classes>
+	</test>
+</suite>

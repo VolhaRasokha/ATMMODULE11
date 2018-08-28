@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WebServiceTest]" parallel="true">
+  <test name="RestAssuredTest(failed)" parallel="true">
+    <groups>
+      <run>
+        <include name="RestAssured"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="webservices.tests.RestAssuredTest">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- webservices.tests.RestAssuredTest -->
+    </classes>
+  </test> <!-- RestAssuredTest(failed) -->
+</suite> <!-- Failed suite [WebServiceTest] -->
