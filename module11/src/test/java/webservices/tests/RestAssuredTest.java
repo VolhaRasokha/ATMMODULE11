@@ -27,6 +27,7 @@ public class RestAssuredTest {
 	@Test(description = "Verify an http response header", groups = { "RestAssured" })
 	public void checkResponseHeader() {
 		Response response = RestAssured.when().get("/users").andReturn();
+// 		the string 29 can be removed, since these action are performed in @BeforeMethod
 		Assert.assertEquals(response.getHeader("Content-Type"),
 				"application/json; charset=utf-8");
 	}
@@ -34,6 +35,7 @@ public class RestAssuredTest {
 	@Test(description = "Verify an http response body", groups = { "RestAssured" })
 	public void checkResponseBody() {
 		Response response = RestAssured.when().get("/users").andReturn();
+// 		the string 37 can be removed, since these action are performed in @BeforeMethod
 		ResponseBody<?> responseBody = response.getBody();
 		User[] users = responseBody.as(User[].class);
 		Assert.assertEquals(users.length, 10);
